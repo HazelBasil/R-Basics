@@ -1,13 +1,32 @@
-# History files
-.Rhistory
-.Rapp.history
+##TRUE BASICS
 
-# Example code in package build process
-*-Ex.R
+#create a variable for reuse
+varname <- value 
 
-# RStudio files
-.Rproj.user/
+#access the objects in the workspace
+ls()
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+#remove a variable
+rm()
+rm(list = ls()) #remove all the variables in the workspace
+
+#basic arithmetic oepration
+#additio +, subtraction -, multiplication *, division /, exponentiation ^, modulo %%, pi pi 
+
+## BASIC DATA TYPES: logical, numeric, integer, character
+is.*()  #check whether *class is right for this variable
+as.*()  #coercion, transform to * class 
+class()  #show the class of the variable
+
+
+##Vector: sequence of the same class of data element 
+#create a vector variable
+vector_variable <- c()
+
+#Attach labels to vector elements
+names(vector_variable) <- c(label1, label2,...) 
+
+#OR, create a name-vector variable
+name_variable <- c(label1, label2,...)
+name(vector_variable) <- name_variable
+
