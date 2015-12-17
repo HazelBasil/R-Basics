@@ -1,3 +1,17 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
 ##TRUE BASICS
 
 #create a variable for reuse
@@ -19,7 +33,7 @@ as.*()  #coercion, transform to * class
 class()  #show the class of the variable
 
 
-##Vector: sequence of the same class of data element 
+##VECTOR: sequence of the same class of data element 
 #create a vector variable
 vector_variable <- c()
 
@@ -29,4 +43,22 @@ names(vector_variable) <- c(label1, label2,...)
 #OR, create a name-vector variable
 name_variable <- c(label1, label2,...)
 name(vector_variable) <- name_variable
+
+# A_vector and B_vector have already been defined for you
+A_vector <- c(1, 2, 3)
+B_vector <- c(4, 5, 6)
+
+
+# Take the sum of A_vector and B_vector: total_vector
+total_vector <- A_vector + B_vector 
+
+# Print total_vector
+total_vector
+
+# Calculate the difference between A_vector and B_vector: diff_vector
+diff_vector <- A_vector - B_vector 
+
+# Print diff_vector
+diff_vector 
+
 
