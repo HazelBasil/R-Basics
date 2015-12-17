@@ -26,6 +26,14 @@ rm(list = ls()) #remove all the variables in the workspace
 
 #basic arithmetic oepration
 #additio +, subtraction -, multiplication *, division /, exponentiation ^, modulo %%, pi pi 
+#logical
+#  < for less than
+#  > for greater than
+#  <= for less than or equal to
+#  >= for greater than or equal to
+#  == for equal to each other
+#  != not equal to each other
+
 
 ## BASIC DATA TYPES: logical, numeric, integer, character
 is.*()  #check whether *class is right for this variable
@@ -61,4 +69,42 @@ diff_vector <- A_vector - B_vector
 # Print diff_vector
 diff_vector 
 
+#subsetting
+# selection by index
+poker_vector[c(1,3)]
 
+# selection by name
+poker_vector[c("Monday", "Wednesday")]
+
+# selection by logicals
+poker_vector[c(TRUE, FALSE, TRUE, FALSE, FALSE)] 
+
+# Casino winnings from Monday to Friday
+poker_vector <- c(140, -50, 20, -120, 240)
+roulette_vector <- c(-24, -50, 100, -350, 10)
+days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+names(poker_vector) <- days_vector
+names(roulette_vector) <- days_vector
+
+# Poker results of Wednesday: poker_wednesday
+poker_wednesday <- poker_vector["Wednesday"]
+
+# Mid-week poker results: poker_midweek by using vector[c(nth of elements)]
+poker_midweek <- poker_vector[c(2,3,4)] #or 
+poker_midweek <- poker_vector[c(2:4)] #or
+poker_midweek <- poker_vector[c("Tuesday", "Wednesday", "Thursday")]
+
+# End-of-week roulette results: roulette_endweek
+roulette_endweek <- roulette_vector[c(4,5)]
+
+# Calculate the average poker gains during the midweek: avg_poker_midweek
+avg_poker_start <- mean(poker_midweek)
+
+# Select amounts for profitable roulette days: roulette_profits
+roulette_profits <- roulette_vector[c(F,F,T,F,T)]
+
+# Sum of the profitable roulette days: roulette_total_profit
+roulette_total_profit <- sum(roulette_profits)
+
+# Number of profitable roulette days: num_profitable_days (logical sum: only counts for trues)
+num_profitable_days <-sum(roulette_vector > 0) 
