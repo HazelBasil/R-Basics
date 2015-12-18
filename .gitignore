@@ -108,3 +108,15 @@ roulette_total_profit <- sum(roulette_profits)
 
 # Number of profitable roulette days: num_profitable_days (logical sum: only counts for trues)
 num_profitable_days <-sum(roulette_vector > 0) 
+
+
+###MATRIX
+##CREATE AND NAME MATRICES
+#creating a matrix is recycling 
+
+matrix(1:6, nrow = 2)  #2 rows with six element, thus 3 columns, filled by column by column
+matrix(1:6, ncol = 2) #2 columns with six elements, thus three rows, filled by column by column
+m <- matrix(1:6, nrow =2, byrow = TRUE) #elements will be filled by row
+
+rbind(m, 7:9) # add a row with elements 7, 8, 9 to the existing matrix m
+cbind(m, c(7,8) # add a column with elements 7,8 to the existing matrix m
