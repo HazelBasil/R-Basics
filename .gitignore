@@ -120,3 +120,6 @@ m <- matrix(1:6, nrow =2, byrow = TRUE) #elements will be filled by row
 
 rbind(m, 7:9) # add a row with elements 7, 8, 9 to the existing matrix m
 cbind(m, c(7,8) # add a column with elements 7,8 to the existing matrix m
+
+rowSums()  #total of each row
+colSums() #total of each col 
