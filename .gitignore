@@ -126,3 +126,11 @@ colSums() #total of each col
 
 m[ , ] #subsetting the matrix
 m[c(1,2), c(3,4)] #subsetting the row 1st and second, and the col 3rd and 4th. 
+
+##  CREATE A FACTOR: CATEGORICAL VARIABLES
+str()  #see the structure 
+factor() #creating a factor variable
+level() #create the name of each element by using level function
+
+#create a factor with the levles (orders) and labels arguments (names), and define whehter or not ordered.
+facrtor(variable_name, levels = c("","",""), labels = c("","",""), ordered = TRUE)
