@@ -5,6 +5,8 @@ varname <- value
 
 #access the objects in the workspace
 ls()
+#summary of some_variable
+summary(some_variable)
 
 #remove a variable
 rm()
