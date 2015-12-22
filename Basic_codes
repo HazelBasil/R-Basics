@@ -122,3 +122,4 @@ level() #create the name of each element by using level function
 
 #create a factor with the levles (orders) and labels arguments (names), and define whehter or not ordered.
 facrtor(variable_name, levels = c("","",""), labels = c("","",""), ordered = TRUE)
+
