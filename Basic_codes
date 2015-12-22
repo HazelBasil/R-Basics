@@ -123,3 +123,16 @@ level() #create the name of each element by using level function
 #create a factor with the levles (orders) and labels arguments (names), and define whehter or not ordered.
 facrtor(variable_name, levels = c("","",""), labels = c("","",""), ordered = TRUE)
 
+##LIST: multi type data structure
+variable <- list() 
+str <- list()  #show compactly the structure of the list
+
+#subsetting and extending list
+list_variable[["name"]] #or 
+list_variable[["only the content of the element
+list_variable[c("name1", "name2")] #multiple elements with meta information
+list_variable$element_name #only the content of the element
+list_variable$new_element_name <- "new_element" #add new element to the list
+list_variable$sub_list$new_element_name <- "new_element" #add new element to the embedded list in the list 
+
+
