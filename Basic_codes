@@ -128,11 +128,22 @@ variable <- list()
 str <- list()  #show compactly the structure of the list
 
 #subsetting and extending list
-list_variable[["name"]] #or 
+list_variable[["name"]]
+list_variabble[[""]][2] #the element ""'s second thing.
+#or 
 list_variable[["only the content of the element
 list_variable[c("name1", "name2")] #multiple elements with meta information
 list_variable$element_name #only the content of the element
 list_variable$new_element_name <- "new_element" #add new element to the list
 list_variable$sub_list$new_element_name <- "new_element" #add new element to the embedded list in the list 
+
+##DATAFRAME
+data.frame() #manually create the dataframe for datasets
+head() #check out the first observation
+tail() #check out the last observation
+dim() #check out the dimensions (observations and variable counts) of the dataframe
+data.frame(, , , , stringsAsFactors =FALSE) #strings are encoded as factors by default, but by adding this argument, it is coded as characters 
+names(my_df) <- c("", "", "", ....)  #name each column for variables
+
 
 
