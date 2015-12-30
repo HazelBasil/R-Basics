@@ -145,5 +145,18 @@ dim() #check out the dimensions (observations and variable counts) of the datafr
 data.frame(, , , , stringsAsFactors =FALSE) #strings are encoded as factors by default, but by adding this argument, it is coded as characters 
 names(my_df) <- c("", "", "", ....)  #name each column for variables
 
+#adding column (new variable)
+data_frame$new_variable
+data_frame[["new_variable"]]
+cbind(data_frame, new_variable)
+
+#adding row (new observation) is only possible by rbind AFTER matching the names to the existing dataframe.
+rbine(data_frame, new_observation)
+
+#sorting and reordering
+sort(data_frame$variable) #ordered ersion of the variable
+v <- order(data_frame$variable) #show the rank-order of the variable and save it to V
+data_frame[v, ] #re-order the observations (rows) based on the ranks indicated by V
+order(data_frame$variable, decreasing = TRUE) #order it in the increasing manner 
 
 
