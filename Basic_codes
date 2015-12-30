@@ -150,6 +150,9 @@ data_frame$new_variable
 data_frame[["new_variable"]]
 cbind(data_frame, new_variable)
 
+#removing columns
+data_frame$column <- NULL
+
 #adding row (new observation) is only possible by rbind AFTER matching the names to the existing dataframe.
 rbine(data_frame, new_observation)
 
