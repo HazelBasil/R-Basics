@@ -145,6 +145,9 @@ dim() #check out the dimensions (observations and variable counts) of the datafr
 data.frame(, , , , stringsAsFactors =FALSE) #strings are encoded as factors by default, but by adding this argument, it is coded as characters 
 names(my_df) <- c("", "", "", ....)  #name each column for variables
 
+#subsetting dataframe
+subset_df <- subset(df, select = c("","","",))
+
 #adding column (new variable)
 data_frame$new_variable
 data_frame[["new_variable"]]
