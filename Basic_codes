@@ -165,4 +165,11 @@ v <- order(data_frame$variable) #show the rank-order of the variable and save it
 data_frame[v, ] #re-order the observations (rows) based on the ranks indicated by V
 order(data_frame$variable, decreasing = TRUE) #order it in the increasing manner 
 
+#graphs
+plot(df$variable)
+plot(df$variable_x, df$variable_y)
+hist()
+table()
+pie()
+boxplot()
 
