@@ -148,6 +148,11 @@ names(my_df) <- c("", "", "", ....)  #name each column for variables
 #subsetting dataframe
 subset_df <- subset(df, select = c("","","",))
 
+#subsetting by logicaln condition (e.g. select observations of only female in gender variable)
+gender_obs <- DF$gender=="female" #creates the logical vector (True if female, FAlse if male)
+female_only <- DF[gender_obs, ] #creates a sub-dataframe that includes only femal obs 
+
+
 #adding column (new variable)
 data_frame$new_variable
 data_frame[["new_variable"]]
@@ -167,7 +172,9 @@ order(data_frame$variable, decreasing = TRUE) #order it in the increasing manner
 
 #graphs
 plot(df$variable)
-plot(df$variable_x, df$variable_y)
+plot(df$variable_x, df$variable_y, xlab ="", ylab="", main="", type ="", col="", col.main ="", cex.axis = num, lyt = num, pch = num) 
+#xlabe, ylabe, main title, color of the plot, plot type can be either "o"(points & line), or "l" (line only), color of the maintitle, the font size of the axis parameters, line type, point symbol
+
 hist()
 table()
 pie()
